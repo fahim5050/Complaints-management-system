@@ -1,8 +1,61 @@
 .d_wrapper{
     width: 100%;
     position: relative;
-    height: 100vh;
+    /* height: 100vh; */
 }
 .d_container{
+    width: 100%;
     color: var(--dark-bg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cards{
+   
+    
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 2rem;
+
+}
+.pending_card{
+    width: 15rem;
+    height: 8rem;
+    color: aliceblue;
+    display: flex;
+    border-radius: 5px;
+    cursor: pointer;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:#dc3545;
+}
+.resolved_card{
+    width: 15rem;
+    height: 8rem;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    display: flex;
+    cursor: pointer;
+    flex-direction: column;
+    background-color:#28a745;
+}
+.inprogress_card{
+    width: 15rem;
+    height: 8rem;
+    color: aliceblue;
+    display: flex;
+    cursor: pointer;
+    border-radius: 5px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc107;
+}
+.graph{
+    margin-top: 2rem;
 }

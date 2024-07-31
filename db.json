@@ -1,0 +1,286 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@example.com",
+      "role": "super admin"
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "email": "jane.smith@example.com",
+      "role": "admin"
+    },
+    {
+      "id": 3,
+      "name": "Emily Johnson",
+      "email": "emily.johnson@example.com",
+      "role": "user"
+    },
+    {
+      "id": 4,
+      "name": "Michael Brown",
+      "email": "michael.brown@example.com",
+      "role": "user"
+    },
+    {
+      "id": 5,
+      "name": "Sarah Davis",
+      "email": "sarah.davis@example.com",
+      "role": "admin"
+    },
+    {
+      "id": 6,
+      "name": "David Wilson",
+      "email": "david.wilson@example.com",
+      "role": "user"
+    },
+    {
+      "id": 7,
+      "name": "Laura Garcia",
+      "email": "laura.garcia@example.com",
+      "role": "user"
+    },
+    {
+      "id": 8,
+      "name": "James Martinez",
+      "email": "james.martinez@example.com",
+      "role": "user"
+    },
+    {
+      "id": 9,
+      "name": "Linda Anderson",
+      "email": "linda.anderson@example.com",
+      "role": "user"
+    },
+    {
+      "id": 10,
+      "name": "Robert Thomas",
+      "email": "robert.thomas@example.com",
+      "role": "admin"
+    },
+    {
+      "id": 11,
+      "name": "Karen Jackson",
+      "email": "karen.jackson@example.com",
+      "role": "user"
+    },
+    {
+      "id": 12,
+      "name": "Daniel White",
+      "email": "daniel.white@example.com",
+      "role": "user"
+    },
+    {
+      "id": 13,
+      "name": "Nancy Harris",
+      "email": "nancy.harris@example.com",
+      "role": "user"
+    },
+    {
+      "id": 14,
+      "name": "Paul Clark",
+      "email": "paul.clark@example.com",
+      "role": "user"
+    },
+    {
+      "id": 15,
+      "name": "Jennifer Lewis",
+      "email": "jennifer.lewis@example.com",
+      "role": "user"
+    },
+    {
+      "id": 16,
+      "name": "Steven Robinson",
+      "email": "steven.robinson@example.com",
+      "role": "user"
+    },
+    {
+      "id": 17,
+      "name": "Jessica Walker",
+      "email": "jessica.walker@example.com",
+      "role": "user"
+    },
+    {
+      "id": 18,
+      "name": "Kevin Hall",
+      "email": "kevin.hall@example.com",
+      "role": "user"
+    },
+    {
+      "id": 19,
+      "name": "Donna Allen",
+      "email": "donna.allen@example.com",
+      "role": "user"
+    },
+    {
+      "id": 20,
+      "name": "Mark Young",
+      "email": "mark.young@example.com",
+      "role": "user"
+    }
+  ],
+  "complaints": [
+    {
+      "id": 1,
+      "userId": 4,
+      "title": "System not working",
+      "description": "The system crashes when trying to submit a form.",
+      "status": "open",
+      "created_at": "2024-07-01T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "userId": 5,
+      "title": "Login issues",
+      "description": "Unable to login with correct credentials.",
+      "status": "in progress",
+      "created_at": "2024-07-02T14:30:00Z"
+    },
+    {
+      "id": 3,
+      "userId": 6,
+      "title": "Slow performance",
+      "description": "The application takes too long to load.",
+      "status": "resolved",
+      "created_at": "2024-07-03T09:15:00Z"
+    },
+    {
+      "id": 4,
+      "userId": 7,
+      "title": "Email notifications not working",
+      "description": "Users are not receiving email notifications.",
+      "status": "open",
+      "created_at": "2024-07-04T11:20:00Z"
+    },
+    {
+      "id": 5,
+      "userId": 8,
+      "title": "Database connection error",
+      "description": "The application cannot connect to the database.",
+      "status": "resolved",
+      "created_at": "2024-07-05T08:45:00Z"
+    },
+    {
+      "id": 6,
+      "userId": 9,
+      "title": "UI not responsive",
+      "description": "The user interface is not responsive on mobile devices.",
+      "status": "in progress",
+      "created_at": "2024-07-06T12:00:00Z"
+    },
+    {
+      "id": 7,
+      "userId": 10,
+      "title": "Error 500 on dashboard",
+      "description": "Users receive a 500 error when accessing the dashboard.",
+      "status": "open",
+      "created_at": "2024-07-07T15:30:00Z"
+    },
+    {
+      "id": 8,
+      "userId": 11,
+      "title": "Password reset not working",
+      "description": "Users cannot reset their passwords.",
+      "status": "resolved",
+      "created_at": "2024-07-08T07:50:00Z"
+    },
+    {
+      "id": 9,
+      "userId": 12,
+      "title": "Session timeout too short",
+      "description": "User sessions timeout after 5 minutes of inactivity.",
+      "status": "in progress",
+      "created_at": "2024-07-09T16:00:00Z"
+    },
+    {
+      "id": 10,
+      "userId": 13,
+      "title": "File upload not working",
+      "description": "Users cannot upload files larger than 5MB.",
+      "status": "open",
+      "created_at": "2024-07-10T13:20:00Z"
+    },
+    {
+      "id": 11,
+      "userId": 14,
+      "title": "Search functionality broken",
+      "description": "The search bar does not return any results.",
+      "status": "resolved",
+      "created_at": "2024-07-11T10:00:00Z"
+    },
+    {
+      "id": 12,
+      "userId": 15,
+      "title": "API rate limit exceeded",
+      "description": "Users are being rate limited even with low usage.",
+      "status": "open",
+      "created_at": "2024-07-12T14:45:00Z"
+    },
+    {
+      "id": 13,
+      "userId": 16,
+      "title": "Profile picture not updating",
+      "description": "Users cannot update their profile pictures.",
+      "status": "in progress",
+      "created_at": "2024-07-13T09:30:00Z"
+    },
+    {
+      "id": 14,
+      "userId": 17,
+      "title": "Data export not working",
+      "description": "The data export feature fails to generate reports.",
+      "status": "resolved",
+      "created_at": "2024-07-14T12:15:00Z"
+    },
+    {
+      "id": 15,
+      "userId": 18,
+      "title": "Notifications delayed",
+      "description": "Users receive notifications several hours late.",
+      "status": "open",
+      "created_at": "2024-07-15T11:10:00Z"
+    },
+    {
+      "id": 16,
+      "userId": 19,
+      "title": "Security vulnerability",
+      "description": "A security vulnerability was discovered in the login module.",
+      "status": "in progress",
+      "created_at": "2024-07-16T14:25:00Z"
+    },
+    {
+      "id": 17,
+      "userId": 20,
+      "title": "Incorrect timezone display",
+      "description": "Times are displayed in the wrong timezone for some users.",
+      "status": "resolved",
+      "created_at": "2024-07-17T09:45:00Z"
+    },
+    {
+      "id": 18,
+      "userId": 21,
+      "title": "Billing issues",
+      "description": "Invoices are not generated correctly for some customers.",
+      "status": "open",
+      "created_at": "2024-07-18T08:30:00Z"
+    },
+    {
+      "id": 19,
+      "userId": 22,
+      "title": "Unresponsive support chat",
+      "description": "The support chat feature is unresponsive for some users.",
+      "status": "resolved",
+      "created_at": "2024-07-19T10:50:00Z"
+    },
+    {
+      "id": 20,
+      "userId": 23,
+      "title": "App crashes on start",
+      "description": "The application crashes immediately upon starting.",
+      "status": "in progress",
+      "created_at": "2024-07-20T15:05:00Z"
+    }
+  ]
+}
