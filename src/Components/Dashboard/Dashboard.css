@@ -1,0 +1,8 @@
+.d_wrapper{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+}
+.d_container{
+    color: var(--dark-bg);
+}
