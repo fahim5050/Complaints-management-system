@@ -3,6 +3,7 @@ import React from "react";
 import logo from "../../images/logo.jpg";
 import "./Navbar.css";
 import { IoIosNotifications } from "react-icons/io";
+// import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
@@ -14,10 +15,12 @@ const Navbar = () => {
         </div>
         {/* end of the navbar logo */}
         <div className="nav_menu">
+          {/* <Link></Link> */}
           <span> Dashboard</span>
-          <span>Users</span>
+          {/* <Link to="/users"><span>Users</span></Link> */}
           <span>Administrators</span>
           <span>Complaints</span>
+          <span>Registration</span>
           <span>Feedbacks</span>
           <span>
             <IoIosNotifications

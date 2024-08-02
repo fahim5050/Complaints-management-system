@@ -6,7 +6,7 @@ const PendingCard = () => {
         fetch('http://localhost:3031/complaints')
           .then(response => response.json())
           .then(data => {
-            const pendingComplaints = data.filter(complaint => complaint.status === 'open').length;
+            const pendingComplaints = data.filter(complaint => complaint.status === 'pending').length;
             
     
             setPending(pendingComplaints);

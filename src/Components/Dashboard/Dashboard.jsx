@@ -6,7 +6,6 @@ import ResolvedCard from "../ResolvedCard/ResolvedCard";
 import ProgressCard from "../ProgressCard/ProgressCard";
 import ComplaintsGraph from "../Graph/Graph";
 const Dashboard = () => {
-  // const colors = ["red", "green", "blue", "purple"];
   const [complaint, setComplaint] = useState("");
   useEffect(() => {
     const fetchComplaint = async () => {
@@ -16,7 +15,7 @@ const Dashboard = () => {
       } catch (error) {
         console.log("error fetching complaint", error);
       }
-      console.log(complaint);
+      // console.log(complaint);
     };
     fetchComplaint();
   }, []);
@@ -26,23 +25,23 @@ const Dashboard = () => {
         <div className="cards">
           <div className="pending_card">
             <PendingCard />
-            <h4>Total pending complaints</h4>
+            <h4>Total Pending Complaints</h4>
           </div>
           {/* end of the pending card */}
           <div className="resolved_card">
             <ResolvedCard />
-            <h4>total resolved complaints</h4>
+            <h4>Total Resolved Complaints</h4>
           </div>
           {/* end of the resolved card */}
           <div className="inprogress_card">
-            <ProgressCard/>
-            <h4>Total progress complaints</h4>
+            <ProgressCard />
+            <h4>Total Progress Complaints</h4>
           </div>
           {/* end of the progress card */}
         </div>
         {/* end of the card */}
         <div className="graph">
-<ComplaintsGraph/>
+          <ComplaintsGraph />
         </div>
         {/* end of the Graph */}
       </div>

@@ -2,17 +2,21 @@
 import './App.css';
 import Dashboard from './Components/Dashboard/Dashboard';
 import Footer from './Components/Footer/Footer';
-import ComplaintsGraph from './Components/Graph/Graph';
 import Navbar from './Components/Navbar/Navbar';
+import UserRegistrationForm from './Components/UserRegistration/UserRegistration';
+// import UserData from './Components/UserForm/UserData.jsx';
 
 
 function App() {
   return (
     <div className="App">
+    
    <Navbar/>
    <Dashboard/>
-   {/* <ComplaintsGraph/> */}
+   <UserRegistrationForm/>
+   {/* <UserData/> */}
    <Footer/>
+  
     </div>
   );
 }

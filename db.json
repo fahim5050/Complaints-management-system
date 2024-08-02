@@ -127,7 +127,7 @@
       "userId": 4,
       "title": "System not working",
       "description": "The system crashes when trying to submit a form.",
-      "status": "open",
+      "status": "pending",
       "created_at": "2024-07-01T10:00:00Z"
     },
     {
@@ -151,7 +151,7 @@
       "userId": 7,
       "title": "Email notifications not working",
       "description": "Users are not receiving email notifications.",
-      "status": "open",
+      "status": "pending",
       "created_at": "2024-07-04T11:20:00Z"
     },
     {
@@ -175,7 +175,7 @@
       "userId": 10,
       "title": "Error 500 on dashboard",
       "description": "Users receive a 500 error when accessing the dashboard.",
-      "status": "open",
+      "status": "pending",
       "created_at": "2024-07-07T15:30:00Z"
     },
     {
@@ -199,7 +199,7 @@
       "userId": 13,
       "title": "File upload not working",
       "description": "Users cannot upload files larger than 5MB.",
-      "status": "open",
+      "status": "pending",
       "created_at": "2024-07-10T13:20:00Z"
     },
     {
@@ -215,7 +215,7 @@
       "userId": 15,
       "title": "API rate limit exceeded",
       "description": "Users are being rate limited even with low usage.",
-      "status": "open",
+      "status": "pending",
       "created_at": "2024-07-12T14:45:00Z"
     },
     {
@@ -239,7 +239,7 @@
       "userId": 18,
       "title": "Notifications delayed",
       "description": "Users receive notifications several hours late.",
-      "status": "open",
+      "status": "pending",
       "created_at": "2024-07-15T11:10:00Z"
     },
     {
@@ -263,7 +263,7 @@
       "userId": 21,
       "title": "Billing issues",
       "description": "Invoices are not generated correctly for some customers.",
-      "status": "open",
+      "status": "pending",
       "created_at": "2024-07-18T08:30:00Z"
     },
     {
