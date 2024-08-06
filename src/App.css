@@ -1,11 +1,11 @@
 :root {
   --dark-bg: #388087;
   --light-bg: #F6F6F2;
-  --primary-color: #6FB3B8;
+  --primary-color: #4f989e;
   --secondary-color: #BADFE7;
   --third-color: #C2EDCE;
 
-  --text-white: #ffff;
+  --text-white: #1f1f1f;
   --text-black: #000000;
   --text-gray: #555555;
   --title-color: #221577;
@@ -31,7 +31,7 @@ body {
 }
 .App {
  position: relative;
- background-color: var(--third-color);
+ background-color: var(  --primary-color);
  
 }
 

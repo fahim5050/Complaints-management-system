@@ -245,6 +245,7 @@
     {
       "id": 16,
       "userId": 19,
+     "assignedWorkerId": 1,
       "title": "Security vulnerability",
       "description": "A security vulnerability was discovered in the login module.",
       "status": "in progress",
@@ -281,6 +282,118 @@
       "description": "The application crashes immediately upon starting.",
       "status": "in progress",
       "created_at": "2024-07-20T15:05:00Z"
+    }
+  ],
+  "workers": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "serviceType": "Electrician",
+      "experience": 5,
+      "rating": 4.5,
+      "contact": "123-456-7890",
+      "email": "john.electrician@example.com",
+      "tasksAssigned": 20
+    },
+    {
+      "id": 2,
+      "name": "Jane Smith",
+      "serviceType": "Plumber",
+      "experience": 8,
+      "rating": 4.8,
+      "contact": "234-567-8901",
+      "email": "jane.plumber@example.com",
+      "tasksAssigned": 30
+    },
+    {
+      "id": 3,
+      "name": "Michael Johnson",
+      "serviceType": "AC Technician",
+      "experience": 6,
+      "rating": 4.6,
+      "contact": "345-678-9012",
+      "email": "michael.ac@example.com",
+      "tasksAssigned": 15
+    },
+    {
+      "id": 4,
+      "name": "Emily Davis",
+      "serviceType": "Mason",
+      "experience": 10,
+      "rating": 4.7,
+      "contact": "456-789-0123",
+      "email": "emily.mason@example.com",
+      "tasksAssigned": 25
+    },
+    {
+      "id": 5,
+      "name": "Robert Brown",
+      "serviceType": "Carpenter",
+      "experience": 7,
+      "rating": 4.9,
+      "contact": "567-890-1234",
+      "email": "robert.carpenter@example.com",
+      "tasksAssigned": 18
+    },
+    {
+      "id": 6,
+      "name": "Mary Williams",
+      "serviceType": "Painter",
+      "experience": 4,
+      "rating": 4.3,
+      "contact": "678-901-2345",
+      "email": "mary.painter@example.com",
+      "tasksAssigned": 22
+    },
+    {
+      "id": 7,
+      "name": "James Taylor",
+      "serviceType": "Cleaner",
+      "experience": 3,
+      "rating": 4.2,
+      "contact": "789-012-3456",
+      "email": "james.cleaner@example.com",
+      "tasksAssigned": 10
+    },
+    {
+      "id": 8,
+      "name": "Patricia Anderson",
+      "serviceType": "Construction",
+      "experience": 12,
+      "rating": 4.8,
+      "contact": "890-123-4567",
+      "email": "patricia.construction@example.com",
+      "tasksAssigned": 35
+    },
+    {
+      "id": 9,
+      "name": "David Wilson",
+      "serviceType": "Glass Worker",
+      "experience": 9,
+      "rating": 4.4,
+      "contact": "901-234-5678",
+      "email": "david.glass@example.com",
+      "tasksAssigned":5
+    },
+    {
+      "id": 10,
+      "name": "Linda Martinez",
+      "serviceType": "Ceiling Worker",
+      "experience": 5,
+      "rating": 4.6,
+      "contact": "012-345-6789",
+      "email": "linda.ceiling@example.com",
+      "tasksAssigned":8
+    },
+    {
+      "id": 11,
+      "name": "Charles Hernandez",
+      "serviceType": "Welder",
+      "experience": 11,
+      "rating": 4.7,
+      "contact": "123-456-7891",
+      "email": "charles.welder@example.com",
+      "tasksAssigned":10
     }
   ]
 }

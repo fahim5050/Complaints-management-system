@@ -3,8 +3,6 @@ import CloseIcon from '@mui/icons-material/Close';
 import EditNoteIcon from '@mui/icons-material/EditNote';
 import DeleteIcon from '@mui/icons-material/Delete';
 import { Modal, Box, Typography, Button } from '@mui/material';
-
-
 const modalStyle = {
   position: 'absolute',
   top: '50%',
@@ -18,8 +16,7 @@ const modalStyle = {
   borderRadius: '5px',
 };
 
-const UserDetailModal = ({  open, onClose, user }) => {
-   
+const ComplaintsModal = ({open,onClose,complaint}) => {
   return (
     <Modal
       open={open}
@@ -32,12 +29,12 @@ const UserDetailModal = ({  open, onClose, user }) => {
           User Details
          
         </Typography>
-        {user && (
+        {complaint && (
           <div>
-            <Typography variant="body1"><strong>ID:</strong> {user.id}</Typography>
-            <Typography variant="body1"><strong>Name:</strong> {user.name}</Typography>
-            <Typography variant="body1"><strong>Email:</strong> {user.email}</Typography>
-            <Typography variant="body1"><strong>Role:</strong> {user.role}</Typography>
+            <Typography variant="body1"><strong>ID:</strong> {complaint.id}</Typography>
+            <Typography variant="body1"><strong>Name:</strong> {complaint.title}</Typography>
+            <Typography variant="body1"><strong>Email:</strong> {complaint.description}</Typography>
+            <Typography variant="body1"><strong>Status:</strong> {complaint.status}</Typography>
             {/* Add more fields as needed */}
           </div>
         )}
@@ -56,7 +53,7 @@ const UserDetailModal = ({  open, onClose, user }) => {
         
       </Box>
     </Modal>
-  );
-};
+  )
+}
 
-export default UserDetailModal;
+export default ComplaintsModal

@@ -6,19 +6,19 @@ import ResolvedCard from "../ResolvedCard/ResolvedCard";
 import ProgressCard from "../ProgressCard/ProgressCard";
 import ComplaintsGraph from "../Graph/Graph";
 const Dashboard = () => {
-  const [complaint, setComplaint] = useState("");
-  useEffect(() => {
-    const fetchComplaint = async () => {
-      try {
-        const response = await axios.get("http://localhost:3031/complaints");
-        setComplaint(response.data);
-      } catch (error) {
-        console.log("error fetching complaint", error);
-      }
-      // console.log(complaint);
-    };
-    fetchComplaint();
-  }, []);
+  // const [complaint, setComplaint] = useState("");
+  // useEffect(() => {
+  //   const fetchComplaint = async () => {
+  //     try {
+  //       const response = await axios.get("http://localhost:3031/complaints");
+  //       setComplaint(response.data);
+  //     } catch (error) {
+  //       console.log("error fetching complaint", error);
+  //     }
+  //     // console.log(complaint);
+  //   };
+  //   fetchComplaint();
+  // }, []);
   return (
     <div className="d_wrapper">
       <div className="d_container">
