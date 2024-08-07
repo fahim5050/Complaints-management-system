@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { TextField, Button, MenuItem, Grid, Paper, Typography } from '@mui/material';
+import axios from 'axios';
 
 const roles = ['Admin', 'Super Admin', 'User', 'Worker'];
 
@@ -31,7 +32,27 @@ const UserRegistrationForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    axios
+    .post("http://localhost:3031/users", formData)
+    .then((response) => console.log("Complaint submitted:", response.data))
+    .catch((error) => console.error("Error submitting complaint:", error));
     console.log(formData);
+    setFormData({
+      Name: '',
+      fatherName: '',
+      CNIC:'',
+      mobileNumber: '',
+      telephoneNumber:'',
+      email:'',
+      occuption:'',
+      address: '',
+      businessAddress:'',
+      businessNumber:'',
+      mailingAddress:'',
+      role: '',
+      emergencyNumber:'',
+      VehicleInformation:'',
+    })
     // Here you can send the formData to your server or handle it as needed
   };
 

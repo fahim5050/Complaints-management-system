@@ -1,129 +1,184 @@
 {
   "users": [
     {
-      "id": 1,
+      "id": "1",
       "name": "John Doe",
       "email": "john.doe@example.com",
-      "role": "super admin"
+      "role": "super admin",
+      "contact": "030001223554"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Jane Smith",
       "email": "jane.smith@example.com",
       "role": "admin"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Emily Johnson",
       "email": "emily.johnson@example.com",
       "role": "user"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Michael Brown",
       "email": "michael.brown@example.com",
       "role": "user"
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Sarah Davis",
       "email": "sarah.davis@example.com",
       "role": "admin"
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "David Wilson",
       "email": "david.wilson@example.com",
       "role": "user"
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "Laura Garcia",
       "email": "laura.garcia@example.com",
       "role": "user"
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "James Martinez",
       "email": "james.martinez@example.com",
       "role": "user"
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "Linda Anderson",
       "email": "linda.anderson@example.com",
       "role": "user"
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Robert Thomas",
       "email": "robert.thomas@example.com",
       "role": "admin"
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Karen Jackson",
       "email": "karen.jackson@example.com",
       "role": "user"
     },
     {
-      "id": 12,
+      "id": "12",
       "name": "Daniel White",
       "email": "daniel.white@example.com",
       "role": "user"
     },
     {
-      "id": 13,
+      "id": "13",
       "name": "Nancy Harris",
       "email": "nancy.harris@example.com",
       "role": "user"
     },
     {
-      "id": 14,
+      "id": "14",
       "name": "Paul Clark",
       "email": "paul.clark@example.com",
       "role": "user"
     },
     {
-      "id": 15,
+      "id": "15",
       "name": "Jennifer Lewis",
       "email": "jennifer.lewis@example.com",
       "role": "user"
     },
     {
-      "id": 16,
+      "id": "16",
       "name": "Steven Robinson",
       "email": "steven.robinson@example.com",
       "role": "user"
     },
     {
-      "id": 17,
+      "id": "17",
       "name": "Jessica Walker",
       "email": "jessica.walker@example.com",
       "role": "user"
     },
     {
-      "id": 18,
+      "id": "18",
       "name": "Kevin Hall",
       "email": "kevin.hall@example.com",
       "role": "user"
     },
     {
-      "id": 19,
+      "id": "19",
       "name": "Donna Allen",
       "email": "donna.allen@example.com",
       "role": "user"
     },
     {
-      "id": 20,
+      "id": "20",
       "name": "Mark Young",
       "email": "mark.young@example.com",
       "role": "user"
+    },
+    {
+      "id": "b2b9",
+      "Name": "fahim",
+      "fatherName": "ud din ",
+      "CNIC": "2130129371317",
+      "mobileNumber": "03068518739",
+      "telephoneNumber": "09123876",
+      "email": "ahmadali@gmail.com",
+      "occuption": "webdeveloper",
+      "address": "peshawar",
+      "businessAddress": "software house",
+      "businessNumber": "mailing",
+      "mailingAddress": "mailing",
+      "role": "Super Admin",
+      "emergencyNumber": "3234687",
+      "VehicleInformation": "5",
+      "createdDate": "2024-08-07"
+    },
+    {
+      "id": "3ee9",
+      "Name": "fahim",
+      "fatherName": "ud din ",
+      "CNIC": "2130129371317",
+      "mobileNumber": "03068518739",
+      "telephoneNumber": "09123876",
+      "email": "ahmadali@gmail.com",
+      "occuption": "webdeveloper",
+      "address": "peshawar",
+      "businessAddress": "software house",
+      "businessNumber": "mailing",
+      "mailingAddress": "mailing",
+      "role": "Super Admin",
+      "emergencyNumber": "3234687",
+      "VehicleInformation": "5",
+      "createdDate": "2024-08-07"
+    },
+    {
+      "id": "fda5",
+      "Name": "najeeb",
+      "fatherName": "khan",
+      "CNIC": "12423345436564565",
+      "mobileNumber": "3254326456546",
+      "telephoneNumber": "643653546",
+      "email": "admin@gmail.com",
+      "occuption": "webdeveloper",
+      "address": "peshawar",
+      "businessAddress": "software house",
+      "businessNumber": "",
+      "mailingAddress": "",
+      "role": "Super Admin",
+      "emergencyNumber": "",
+      "VehicleInformation": "20",
+      "createdDate": "2024-08-07"
     }
   ],
   "complaints": [
     {
-      "id": 1,
+      "id": "1",
       "userId": 4,
       "title": "System not working",
       "description": "The system crashes when trying to submit a form.",
@@ -131,7 +186,7 @@
       "created_at": "2024-07-01T10:00:00Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "userId": 5,
       "title": "Login issues",
       "description": "Unable to login with correct credentials.",
@@ -139,7 +194,7 @@
       "created_at": "2024-07-02T14:30:00Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "userId": 6,
       "title": "Slow performance",
       "description": "The application takes too long to load.",
@@ -147,7 +202,7 @@
       "created_at": "2024-07-03T09:15:00Z"
     },
     {
-      "id": 4,
+      "id": "4",
       "userId": 7,
       "title": "Email notifications not working",
       "description": "Users are not receiving email notifications.",
@@ -155,7 +210,7 @@
       "created_at": "2024-07-04T11:20:00Z"
     },
     {
-      "id": 5,
+      "id": "5",
       "userId": 8,
       "title": "Database connection error",
       "description": "The application cannot connect to the database.",
@@ -163,7 +218,7 @@
       "created_at": "2024-07-05T08:45:00Z"
     },
     {
-      "id": 6,
+      "id": "6",
       "userId": 9,
       "title": "UI not responsive",
       "description": "The user interface is not responsive on mobile devices.",
@@ -171,7 +226,7 @@
       "created_at": "2024-07-06T12:00:00Z"
     },
     {
-      "id": 7,
+      "id": "7",
       "userId": 10,
       "title": "Error 500 on dashboard",
       "description": "Users receive a 500 error when accessing the dashboard.",
@@ -179,7 +234,7 @@
       "created_at": "2024-07-07T15:30:00Z"
     },
     {
-      "id": 8,
+      "id": "8",
       "userId": 11,
       "title": "Password reset not working",
       "description": "Users cannot reset their passwords.",
@@ -187,7 +242,7 @@
       "created_at": "2024-07-08T07:50:00Z"
     },
     {
-      "id": 9,
+      "id": "9",
       "userId": 12,
       "title": "Session timeout too short",
       "description": "User sessions timeout after 5 minutes of inactivity.",
@@ -195,7 +250,7 @@
       "created_at": "2024-07-09T16:00:00Z"
     },
     {
-      "id": 10,
+      "id": "10",
       "userId": 13,
       "title": "File upload not working",
       "description": "Users cannot upload files larger than 5MB.",
@@ -203,7 +258,7 @@
       "created_at": "2024-07-10T13:20:00Z"
     },
     {
-      "id": 11,
+      "id": "11",
       "userId": 14,
       "title": "Search functionality broken",
       "description": "The search bar does not return any results.",
@@ -211,7 +266,7 @@
       "created_at": "2024-07-11T10:00:00Z"
     },
     {
-      "id": 12,
+      "id": "12",
       "userId": 15,
       "title": "API rate limit exceeded",
       "description": "Users are being rate limited even with low usage.",
@@ -219,7 +274,7 @@
       "created_at": "2024-07-12T14:45:00Z"
     },
     {
-      "id": 13,
+      "id": "13",
       "userId": 16,
       "title": "Profile picture not updating",
       "description": "Users cannot update their profile pictures.",
@@ -227,7 +282,7 @@
       "created_at": "2024-07-13T09:30:00Z"
     },
     {
-      "id": 14,
+      "id": "14",
       "userId": 17,
       "title": "Data export not working",
       "description": "The data export feature fails to generate reports.",
@@ -235,7 +290,7 @@
       "created_at": "2024-07-14T12:15:00Z"
     },
     {
-      "id": 15,
+      "id": "15",
       "userId": 18,
       "title": "Notifications delayed",
       "description": "Users receive notifications several hours late.",
@@ -243,16 +298,16 @@
       "created_at": "2024-07-15T11:10:00Z"
     },
     {
-      "id": 16,
+      "id": "16",
       "userId": 19,
-     "assignedWorkerId": 1,
+      "assignedWorkerId": 1,
       "title": "Security vulnerability",
       "description": "A security vulnerability was discovered in the login module.",
       "status": "in progress",
       "created_at": "2024-07-16T14:25:00Z"
     },
     {
-      "id": 17,
+      "id": "17",
       "userId": 20,
       "title": "Incorrect timezone display",
       "description": "Times are displayed in the wrong timezone for some users.",
@@ -260,7 +315,7 @@
       "created_at": "2024-07-17T09:45:00Z"
     },
     {
-      "id": 18,
+      "id": "18",
       "userId": 21,
       "title": "Billing issues",
       "description": "Invoices are not generated correctly for some customers.",
@@ -268,7 +323,7 @@
       "created_at": "2024-07-18T08:30:00Z"
     },
     {
-      "id": 19,
+      "id": "19",
       "userId": 22,
       "title": "Unresponsive support chat",
       "description": "The support chat feature is unresponsive for some users.",
@@ -276,17 +331,119 @@
       "created_at": "2024-07-19T10:50:00Z"
     },
     {
-      "id": 20,
+      "id": "20",
       "userId": 23,
       "title": "App crashes on start",
       "description": "The application crashes immediately upon starting.",
       "status": "in progress",
       "created_at": "2024-07-20T15:05:00Z"
+    },
+    {
+      "id": "fbb5",
+      "type": "",
+      "subType": "",
+      "useProfile": true,
+      "pocName": "John Doe",
+      "description": ""
+    },
+    {
+      "id": "1446",
+      "type": "",
+      "subType": "",
+      "useProfile": false,
+      "pocName": "",
+      "pocContact": "",
+      "description": "",
+      "status": "pending"
+    },
+    {
+      "id": "dd04",
+      "type": "",
+      "subType": "",
+      "useProfile": false,
+      "pocName": "",
+      "pocContact": "",
+      "description": "",
+      "status": "pending"
+    },
+    {
+      "id": "bbcd",
+      "type": "",
+      "subType": "",
+      "useProfile": false,
+      "pocName": "",
+      "pocContact": "",
+      "description": "",
+      "status": "pending"
+    },
+    {
+      "id": "",
+      "type": "",
+      "subType": "",
+      "useProfile": true,
+      "pocName": "John Doe",
+      "pocContact": "030001223554",
+      "description": "hello\n",
+      "status": "pending"
+    },
+    {
+      "id": "1",
+      "type": "",
+      "subType": "",
+      "useProfile": true,
+      "pocName": "John Doe",
+      "pocContact": "030001223554",
+      "description": "hello\n",
+      "status": "pending"
+    },
+    {
+      "id": "1",
+      "type": "",
+      "subType": "",
+      "useProfile": true,
+      "pocName": "John Doe",
+      "pocContact": "030001223554",
+      "description": "hello\n",
+      "email": "john.doe@example.com",
+      "status": "pending"
+    },
+    {
+      "id": "1",
+      "type": "self",
+      "subType": "welder",
+      "useProfile": true,
+      "pocName": "John Doe",
+      "pocContact": "030001223554",
+      "description": "need to weld my main gate lock",
+      "email": "john.doe@example.com",
+      "status": "pending"
+    },
+    {
+      "id": "",
+      "type": "",
+      "subType": "",
+      "useProfile": false,
+      "pocName": "",
+      "pocContact": "",
+      "description": "",
+      "email": "",
+      "status": "pending"
+    },
+    {
+      "id": "1",
+      "type": "self",
+      "subType": "electrician",
+      "useProfile": true,
+      "pocName": "John Doe",
+      "pocContact": "030001223554",
+      "description": "hello",
+      "email": "john.doe@example.com",
+      "status": "pending"
     }
   ],
   "workers": [
     {
-      "id": 1,
+      "id": "1",
       "name": "John Doe",
       "serviceType": "Electrician",
       "experience": 5,
@@ -296,7 +453,7 @@
       "tasksAssigned": 20
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Jane Smith",
       "serviceType": "Plumber",
       "experience": 8,
@@ -306,7 +463,7 @@
       "tasksAssigned": 30
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Michael Johnson",
       "serviceType": "AC Technician",
       "experience": 6,
@@ -316,7 +473,7 @@
       "tasksAssigned": 15
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Emily Davis",
       "serviceType": "Mason",
       "experience": 10,
@@ -326,7 +483,7 @@
       "tasksAssigned": 25
     },
     {
-      "id": 5,
+      "id": "5",
       "name": "Robert Brown",
       "serviceType": "Carpenter",
       "experience": 7,
@@ -336,7 +493,7 @@
       "tasksAssigned": 18
     },
     {
-      "id": 6,
+      "id": "6",
       "name": "Mary Williams",
       "serviceType": "Painter",
       "experience": 4,
@@ -346,7 +503,7 @@
       "tasksAssigned": 22
     },
     {
-      "id": 7,
+      "id": "7",
       "name": "James Taylor",
       "serviceType": "Cleaner",
       "experience": 3,
@@ -356,7 +513,7 @@
       "tasksAssigned": 10
     },
     {
-      "id": 8,
+      "id": "8",
       "name": "Patricia Anderson",
       "serviceType": "Construction",
       "experience": 12,
@@ -366,34 +523,34 @@
       "tasksAssigned": 35
     },
     {
-      "id": 9,
+      "id": "9",
       "name": "David Wilson",
       "serviceType": "Glass Worker",
       "experience": 9,
       "rating": 4.4,
       "contact": "901-234-5678",
       "email": "david.glass@example.com",
-      "tasksAssigned":5
+      "tasksAssigned": 5
     },
     {
-      "id": 10,
+      "id": "10",
       "name": "Linda Martinez",
       "serviceType": "Ceiling Worker",
       "experience": 5,
       "rating": 4.6,
       "contact": "012-345-6789",
       "email": "linda.ceiling@example.com",
-      "tasksAssigned":8
+      "tasksAssigned": 8
     },
     {
-      "id": 11,
+      "id": "11",
       "name": "Charles Hernandez",
       "serviceType": "Welder",
       "experience": 11,
       "rating": 4.7,
       "contact": "123-456-7891",
       "email": "charles.welder@example.com",
-      "tasksAssigned":10
+      "tasksAssigned": 10
     }
   ]
 }
