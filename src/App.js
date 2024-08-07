@@ -1,7 +1,7 @@
 
 import './App.css';
 // import ComplaintData from './Components/Complaints/ComplaintData';
-// import CreateComplain from './Components/CreateComplain/CreateComplain';
+import CreateComplain from './Components/CreateComplain/CreateComplain';
 import Dashboard from './Components/Dashboard/Dashboard';
 import Footer from './Components/Footer/Footer';
 import Navbar from './Components/Navbar/Navbar';
@@ -18,7 +18,7 @@ function App() {
    <UserRegistrationForm/>
    {/* <UserData/> */}
    {/* <ComplaintData/> */}
-   {/* <CreateComplain/> */}
+   <CreateComplain/>
    <Footer/>
   
     </div>
