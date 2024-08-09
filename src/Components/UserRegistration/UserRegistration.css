@@ -1,0 +1,8 @@
+.registration{
+    display: flex;
+    height: auto;
+    width: 100%;
+    background-color: var(--primary-color);
+    align-items: center;
+    
+}

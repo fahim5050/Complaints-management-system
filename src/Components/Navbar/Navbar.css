@@ -35,11 +35,13 @@
 .nav_menu{
     display: flex;
     flex: 2;
+    
     align-items: center;
     justify-content: space-between;
 }
 .nav_menu>span{
     font-weight: 400;
+    
 }
 .nav_menu>span:hover{
     cursor: pointer;

@@ -1,0 +1,10 @@
+.user_wrapper{
+    display: flex;
+    width: 100%;
+    position: relative;
+    height: auto;
+    background-color: var(--primary-color);
+}
+.user_container{
+width: 90%;
+}

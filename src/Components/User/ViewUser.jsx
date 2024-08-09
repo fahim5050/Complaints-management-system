@@ -34,10 +34,17 @@ const UserDetailModal = ({  open, onClose, user }) => {
         </Typography>
         {user && (
           <div>
-            <Typography variant="body1"><strong>ID:</strong> {user.id}</Typography>
-            <Typography variant="body1"><strong>Name:</strong> {user.name}</Typography>
-            <Typography variant="body1"><strong>Email:</strong> {user.email}</Typography>
-            <Typography variant="body1"><strong>Role:</strong> {user.role}</Typography>
+            <Typography variant="body1" ><strong>ID:</strong> {user.id}</Typography>
+            <Typography variant="body1" ><strong>Name:</strong> {user.Name}</Typography>
+            <Typography variant="body1" ><strong>Father Name:</strong> {user.fatherName}</Typography>
+            <Typography variant="body1" ><strong>Contact:</strong> {user.mobileNumber}</Typography>
+            <Typography variant="body1" ><strong>CNIC:</strong> {user.CNIC}</Typography>
+            <Typography variant="body1" ><strong>Email:</strong> {user.email}</Typography>
+            <Typography variant="body1" ><strong>Address:</strong> {user.address}</Typography>
+            <Typography variant="body1" ><strong>Emergency Contact:</strong> {user.emergencyNumber}</Typography>
+            <Typography variant="body1" ><strong>Buiness Address:</strong> {user.businessAddress}</Typography>
+            <Typography variant="body1" ><strong>Role:</strong> {user.role}</Typography>
+            <Typography variant="body1" ><strong>Created Date:</strong> {user.createdDate}</Typography>
             {/* Add more fields as needed */}
           </div>
         )}

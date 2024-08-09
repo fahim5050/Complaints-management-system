@@ -5,9 +5,11 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import EditNoteIcon from "@mui/icons-material/EditNote";
 import { DataGrid } from "@mui/x-data-grid";
 import ComplaintsModal from "./ComplaintsModal";
+import MenuItem from '@mui/material/MenuItem';
+import Select from '@mui/material/Select';
 
 
-const ComplaintDataTable = ({ complaints, onView, onDelete, onUpdate }) => {
+const ComplaintDataTable = ({ complaints,workers, onView, onDelete, onUpdate }) => {
   const [selectedComplaint, setSelectedComplaint] = useState(null);
   const [isComplaintModalOpen, setIsComplaintModalOpen] = useState(false);
 
@@ -23,6 +25,16 @@ const ComplaintDataTable = ({ complaints, onView, onDelete, onUpdate }) => {
     
   };
 
+  const handleAssignWorker = (complaint, workerId) => {
+    const updatedComplaint = {
+      ...complaint,
+      workerId: workerId,
+      status: "Progressing", // Change status to "Progressing" when assigned
+    };
+    // onUpdate(updatedComplaint);
+    // onAssign(updatedComplaint); // Trigger any additional assign handling logic
+  };
+
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
     { field: "title", headerName: "Title", width: 150, editable: true },
@@ -34,6 +46,17 @@ const ComplaintDataTable = ({ complaints, onView, onDelete, onUpdate }) => {
     },
     { field: "status", headerName: "Status", width: 110, editable: true },
     { field: "userName", headerName: "User Name", width: 110, editable: true },
+    {
+      field: "workerName",
+      headerName: "Assigned Worker",
+      width: 150,
+      valueGetter: (params) => {
+        // const workerId = params.row.workerId; // Get workerId from the row
+        // if (!workerId) return "Unassigned"; // Return "Unassigned" if workerId is null
+        // const worker = workers.find((w) => w.id === workerId);
+        // return worker ? worker.name : "Unknown Worker"; // Return worker name or "Unknown Worker"
+      },
+    },
     {
       field: "actions",
       headerName: "Actions",
@@ -67,9 +90,13 @@ const ComplaintDataTable = ({ complaints, onView, onDelete, onUpdate }) => {
       ),
     },
   ];
+ 
+  
+  
   return (
-    <div style={{ height: 400, width: "100%" }}>
+    <div style={{ height: 521, width: "100%" }}>
       <DataGrid
+      
         rows={complaints}
         columns={columns}
         pageSize={5}
@@ -77,6 +104,12 @@ const ComplaintDataTable = ({ complaints, onView, onDelete, onUpdate }) => {
         checkboxSelection
         disableSelectionOnClick
         experimentalFeatures={{ newEditingApi: true }}
+        sx={{
+          '& .MuiDataGrid-columnHeaders': {
+            backgroundColor: '#388087', // Change this to your desired color
+            color: '#333', // Change this to your desired text color
+          },
+        }}
       />
       {selectedComplaint && (
         <ComplaintsModal

@@ -1,0 +1,20 @@
+.userForm{
+    margin-top: 1rem;
+}
+.add_user{
+    display: flex;
+    justify-content: end;
+    margin-right: 2rem;
+}
+.add_user>span{
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color:var(--dark-bg);
+    width: 8rem;
+    padding: 5px;
+    justify-content: center;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
