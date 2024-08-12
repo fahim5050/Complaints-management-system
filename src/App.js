@@ -24,7 +24,7 @@ function App() {
 
           {/* <CreateComplain/> */}
         </Routes>
-        {/* <Footer/> */}
+        <Footer/>
       </div>
     </Router>
   );

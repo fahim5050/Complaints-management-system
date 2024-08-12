@@ -10,8 +10,8 @@ const modalStyle = {
   top: '50%',
   left: '50%',
   transform: 'translate(-50%, -50%)',
-  width: 400,
-  bgcolor: '#C2EDCE',
+  width: 500,
+  bgcolor: '#BADFE7',
   boxShadow: 24,
   p: 4,
   color:"black",
@@ -48,18 +48,20 @@ const UserDetailModal = ({  open, onClose, user }) => {
             {/* Add more fields as needed */}
           </div>
         )}
-        <Button onClick={onClose} variant="contained"  sx={{ mt: 2,  }}>
+        <div className="btn" style={{display:'flex',justifyContent:'center',gap:'1rem'}}>
+        <Button onClick={onClose} variant="contained">
          <CloseIcon/>
         </Button>
         <Button variant="contained"
-              color="secondary"  sx={{ mt: 2, ml:2,}}>
+              color="secondary"  >
           <EditNoteIcon/>
         </Button>
         
         <Button variant="contained"
-              color="error"  sx={{ mt: 2, ml:2,  }}>
+              color="error"  >
           <DeleteIcon/>
         </Button>
+        </div>
         
       </Box>
     </Modal>

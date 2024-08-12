@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ComplaintDataTable from "./ComplaintDataTable";
 import { Link } from "react-router-dom";
-import './ComplaintData.css'
+import './complaintData.css'
 
 const ComplaintData = () => {
   const [complaints, setComplaints] = useState([]);

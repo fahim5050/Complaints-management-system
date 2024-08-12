@@ -20,7 +20,13 @@ const UserDataTable = ({ users, onView, onDelete, onUpdate}) => {
     setIsModalOpen(false);
   };
   const columns = [
-    { field: 'id', headerName: 'ID', width: 90 },
+    {
+      field: 'serialNo',
+      headerName: 'S.No',
+      width: 90,
+      renderCell: (params) => params.api.getSortedRowIds().indexOf(params.id) + 1,
+    },
+    // { field: 'id', headerName: 'ID', width: 90 },
     { field: 'Name', headerName: 'Name', width: 150, editable: true },
     { field: 'fatherName', headerName: 'Father Name', width: 150, editable: true },
     { field: 'mobileNumber', headerName: 'Contact', width: 150, editable: true },
@@ -69,8 +75,8 @@ const UserDataTable = ({ users, onView, onDelete, onUpdate}) => {
         columns={columns}
         pageSize={5}
         rowsPerPageOptions={[5, 10, 20]}
-        checkboxSelection
-        disableSelectionOnClick
+        // checkboxSelection
+        // disableSelectionOnClick
         experimentalFeatures={{ newEditingApi: true }}
       />
       {selectedUser && (
