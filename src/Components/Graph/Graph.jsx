@@ -3,6 +3,7 @@ import { PieChart, Pie, Cell, Tooltip, Legend, ResponsiveContainer } from 'recha
 
 const ComplaintsPieChart = () => {
   const [data, setData] = useState([]);
+  
 
   const COLORS = ['#0088FE', '#00C49F', '#FFBB28', '#FF8042'];
 

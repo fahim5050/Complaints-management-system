@@ -1,35 +1,39 @@
+
+
 import React, { useEffect, useState } from "react";
-import "./UserForm.css";
+
 import axios from "axios";
-import UserDataTable from "../User/UserDataTable";
+
 import AddIcon from "@mui/icons-material/Add";
 import { Link } from "react-router-dom";
-const UserForm = () => {
-  const [users, setUsers] = useState([]);
+import WorkerList from "./WorkerList";
+const WorkerData = () => {
+  const [workers, setWorkers] = useState([]);
   const [loading, setLoading] = useState(true);
   
   useEffect(() => {
     const fetchComplaint = async () => {
       try {
-        const response = await axios.get("http://localhost:3031/users");
-        setUsers(response.data);
+        const response = await axios.get("http://localhost:3031/workers");
+        setWorkers(response.data);
         setLoading(false);
       } catch (error) {
         console.log("error fetching users", error);
         setLoading(false);
       }
     };
+    console.log(workers)
     
     fetchComplaint();
   }, []);
-  const handleView = (user) => {
+  const handleView = (worker) => {
     // Implement view logic here
-    alert(`Viewing user: ${user.name}`);
+    alert(`Viewing user: ${worker.name}`);
   };
 
-  const handleUpdate = (user) => {
+  const handleUpdate = (worker) => {
     // Implement update logic here
-    alert(`Updating user: ${user.name}`);
+    alert(`Updating user: ${worker.name}`);
   };
 
   // const handleDelete = (user) => {
@@ -38,19 +42,19 @@ const UserForm = () => {
   //   // Optionally remove the user from the state
   //   setUsers((prevUsers) => prevUsers.filter((u) => u.id !== user.id));
   // };
-  const handleDelete = (user) => {
+  const handleDelete = (worker) => {
     // Now accessing Name via user.row.Name
-    const confirmDelete = window.confirm(`Are you sure you want to delete: ${user.row.Name}?`);
+    const confirmDelete = window.confirm(`Are you sure you want to delete: ${worker.row.name}?`);
     if (!confirmDelete) return;
   
-    fetch(`http://localhost:3031/users/${user.row.id}`, {
+    fetch(`http://localhost:3031/workers${worker.row.id}`, {
       method: 'DELETE',
     })
       .then((response) => {
         if (response.ok) {
           // Update the state to remove the deleted user
-          setUsers((prevUsers) =>
-            prevUsers.filter((u) => u.id !== user.row.id)
+          setWorkers((prevUsers) =>
+            prevUsers.filter((u) => u.id !== worker.row.id)
           );
         } else {
           alert('Failed to delete the user');
@@ -81,12 +85,12 @@ const UserForm = () => {
         >
           <span>
             {/* <AddIcon /> */}
-            Add User
+            Add Employee
           </span>
         </Link>
       </div>
-      <UserDataTable
-        users={users}
+      <WorkerList
+        workers={workers}
         onView={handleView}
         onUpdate={handleUpdate}
         onDelete={handleDelete}
@@ -95,4 +99,4 @@ const UserForm = () => {
   );
 };
 
-export default UserForm;
+export default WorkerData;

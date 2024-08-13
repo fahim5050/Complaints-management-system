@@ -63,13 +63,32 @@ const ComplaintData = () => {
     alert(`Updating complaint: ${complaint.title}`);
   };
 
-  // Handle deleting a complaint
+  
+
   const handleDelete = (complaint) => {
-    alert(`Deleting complaint: ${complaint.title}`);
-    setComplaints((prevComplaints) =>
-      prevComplaints.filter((c) => c.id !== complaint.id)
-    );
+    const confirmDelete = window.confirm(`Are you sure you want to delete: ${complaint.title}?`);
+    if (!confirmDelete) return;
+
+    fetch(`http://localhost:3031/complaints/${complaint.id}`, {
+      method: 'DELETE',
+    })
+      .then((response) => {
+        if (response.ok) {
+          // Update the state to remove the deleted complaint
+          setComplaints((prevComplaints) =>
+            prevComplaints.filter((c) => c.id !== complaint.id)
+          );
+          // alert(`Deleted complaint: ${complaint.title}`);
+        } else {
+          alert('Failed to delete the complaint');
+        }
+      })
+      .catch((error) => {
+        console.error('Error deleting complaint:', error);
+        alert('Error occurred while deleting the complaint');
+      });
   };
+
 
   // Render loading state
   if (loading) {
