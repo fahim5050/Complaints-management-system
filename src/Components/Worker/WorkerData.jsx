@@ -53,8 +53,8 @@ const WorkerData = () => {
       .then((response) => {
         if (response.ok) {
           // Update the state to remove the deleted user
-          setWorkers((prevUsers) =>
-            prevUsers.filter((u) => u.id !== worker.row.id)
+          setWorkers((prevWorker) =>
+            prevWorker.filter((w) => w.id !== worker.row.id)
           );
         } else {
           alert('Failed to delete the user');
@@ -70,7 +70,7 @@ const WorkerData = () => {
     <div className="userForm">
       <div className="add_user">
         <Link
-          to="/registration"
+          to="/register_employee"
           style={{
             display: "flex",
             color: "white",
