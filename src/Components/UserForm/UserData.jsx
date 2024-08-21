@@ -29,7 +29,7 @@ const UserForm = () => {
 
   const handleUpdate = (user) => {
     // Implement update logic here
-    alert(`Updating user: ${user.name}`);
+    alert(`Updating user: ${user.Name}`);
   };
 
   // const handleDelete = (user) => {

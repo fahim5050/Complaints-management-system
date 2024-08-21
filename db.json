@@ -107,24 +107,6 @@
   ],
   "complaints": [
     {
-      "id": "3",
-      "userId": 6,
-      "title": "Slow performance",
-      "description": "The application takes too long to load.",
-      "status": "resolved",
-      "workerId": null,
-      "created_at": "2024-07-03T09:15:00Z"
-    },
-    {
-      "id": "4",
-      "userId": 7,
-      "title": "Email notifications not working",
-      "description": "Users are not receiving email notifications.",
-      "status": "pending",
-      "workerId": null,
-      "created_at": "2024-07-04T11:20:00Z"
-    },
-    {
       "id": "5",
       "userId": 8,
       "title": "Database connection error",

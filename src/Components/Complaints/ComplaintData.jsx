@@ -53,16 +53,16 @@ const ComplaintData = () => {
     return { ...complaint, userName: user ? user.Name : "Unknown User" };
   });
 
-  // Handle viewing a complaint 
-  const handleView = (complaint) => {
-    alert(`Viewing complaint: ${complaint.title}`);
-  };
+ 
 
   // Handle updating a complaint
-  const handleUpdate = (complaint) => {
-    alert(`Updating complaint: ${complaint.title}`);
+  const handleUpdate = (updatedComplaint) => {
+    setComplaints((prevComplaints) =>
+      prevComplaints.map((complaint) =>
+        complaint.id === updatedComplaint.id ? updatedComplaint : complaint
+      )
+    );
   };
-
   
 
   const handleDelete = (complaint) => {
@@ -102,7 +102,7 @@ const ComplaintData = () => {
       </div>
       <ComplaintDataTable
         complaints={complaintsWithUserNames}
-        onView={handleView}
+      // onView={handleView}
         onUpdate={handleUpdate}
         onDelete={handleDelete}
         workers={workers}

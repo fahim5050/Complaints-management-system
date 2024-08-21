@@ -6,13 +6,21 @@ import Button from '@mui/material/Button';
 import DeleteIcon from '@mui/icons-material/Delete';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import EditNoteIcon from '@mui/icons-material/EditNote';
+import UserUpdateModal from './UserUpdateModal';
 
-const UserDataTable = ({ users, onView, onDelete, onUpdate}) => {
+const UserDataTable = ({ users,onDelete, onUpdate}) => {
   const [selectedUser, setSelectedUser] = useState(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(false);
+
   const handleView = (user) => {
     setSelectedUser(user);
     setIsModalOpen(true);
+  };
+  const handleUpdate = (user) => {
+    setSelectedUser(user);
+    setIsUpdateModalOpen(true);
+    setIsUpdateModalOpen(false);
   };
 
   const handleCloseModal = () => {
@@ -86,6 +94,16 @@ const UserDataTable = ({ users, onView, onDelete, onUpdate}) => {
           user={selectedUser}
         />
       )}
+      {
+        selectedUser && (
+          <UserUpdateModal
+          open={isUpdateModalOpen}
+          onClose={handleCloseModal}
+          user={selectedUser}
+          onUpdate={onUpdate}
+          />
+        )
+      }
     </div>
   );
 };

@@ -10,7 +10,7 @@ import {
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const roles = ["Admin", "Super Admin", "User", "Worker"];
+const roles = ["Admin", "Super Admin", "User"];
 
 const UserRegistrationForm = () => {
   const nevigate = useNavigate();
@@ -61,6 +61,8 @@ const UserRegistrationForm = () => {
       role: "",
       emergencyNumber: "",
       VehicleInformation: "",
+      password:"",
+      conformPassword:"",
     });
     // Here you can send the formData to your server or handle it as needed
   };
@@ -210,7 +212,7 @@ const UserRegistrationForm = () => {
                 margin="normal"
               />
             </div>
-
+            <div style={{display:'flex', gap:'2rem',}}>
             <TextField
               fullWidth
               label="Vehicle Information"
@@ -219,7 +221,7 @@ const UserRegistrationForm = () => {
               onChange={handleChange}
               margin="normal"
             />
-            <TextField
+             <TextField
               fullWidth
               label="Created Date"
               name="createdDate"
@@ -228,6 +230,30 @@ const UserRegistrationForm = () => {
               margin="normal"
               disabled
             />
+            </div>
+             <div style={{display:'flex', gap:'2rem',}}>
+             <TextField
+              fullWidth
+              label="Password"
+              name="password"
+              value={formData.password}
+              onChange={handleChange}
+              margin="normal"
+              password
+            />
+           
+             <TextField
+              fullWidth
+              label="Conform Password"
+              name="conformPassword"
+              value={formData.conformPassword}
+              onChange={handleChange}
+              margin="normal"
+              password
+            />
+             </div>
+           
+            
             <div
               style={{
                 display: "flex",

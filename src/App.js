@@ -10,9 +10,10 @@ import ComplaintData from "./Components/Complaints/ComplaintData";
 import UserData from "./Components/UserForm/UserData.jsx";
 import UserRegistrationForm from "./Components/UserRegistration/UserRegistration.jsx";
 import FeedbackList from "./Components/Feedbacks/FeedbackList.jsx";
-import WorkerList from "./Components/Worker/WorkerList.jsx";
+// import WorkerList from "./Components/Worker/WorkerList.jsx";
 import WorkerData from "./Components/Worker/WorkerData.jsx";
 import WorkerRegistration from "./Components/Worker/WorkerRegistration.jsx";
+// import UpdateComplaint from "./Components/Complaints/UpdateComplaint.jsx";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/workers" element={<WorkerData/>} />
           <Route path="/register_employee" element={<WorkerRegistration/>} />
           <Route path="/add_complaint" element={<CreateComplain />} />
+          {/* <Route path="/update_complaint" element={<UpdateComplaint/>} /> */}
           <Route path="/feedbacks" element={<FeedbackList />} />
         </Routes>
 

@@ -5,22 +5,29 @@ import VisibilityIcon from "@mui/icons-material/Visibility";
 import EditNoteIcon from "@mui/icons-material/EditNote";
 import { DataGrid } from "@mui/x-data-grid";
 import ComplaintsModal from "./ComplaintsModal";
+import UpdateComplaintModal from "./UpdateComplaintForm";
 
 
 
 const ComplaintDataTable = ({ complaints,workers, onView, onDelete, onUpdate }) => {
   const [selectedComplaint, setSelectedComplaint] = useState(null);
   const [isComplaintModalOpen, setIsComplaintModalOpen] = useState(false);
+  const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(false);
 
   const handleView = (complaints) => {
     setSelectedComplaint(complaints);
     setIsComplaintModalOpen(true);
    
   };
+  const handleUpdate = (complaint) => {
+    setSelectedComplaint(complaint);
+    setIsUpdateModalOpen(true);
+  };
 
   const handleCloseModal = () => {
     setSelectedComplaint(null);
     setIsComplaintModalOpen(false);
+    setIsUpdateModalOpen(false);
     
   };
 
@@ -99,7 +106,7 @@ const ComplaintDataTable = ({ complaints,workers, onView, onDelete, onUpdate }) 
             variant="contained"
             color="secondary"
             style={{ marginRight: 8 }}
-            onClick={() => onUpdate(params.row)}
+            onClick={() => handleUpdate(params.row)}
           >
             <EditNoteIcon />
           </Button>
@@ -155,6 +162,14 @@ const ComplaintDataTable = ({ complaints,workers, onView, onDelete, onUpdate }) 
           open={isComplaintModalOpen}
           onClose={handleCloseModal}
           complaint={selectedComplaint}
+        />
+      )}
+        {selectedComplaint && (
+        <UpdateComplaintModal
+          open={isUpdateModalOpen}
+          onClose={handleCloseModal}
+          complaint={selectedComplaint}
+          onUpdate={onUpdate}
         />
       )}
     </div>
