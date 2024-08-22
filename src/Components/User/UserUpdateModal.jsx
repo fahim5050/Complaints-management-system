@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import { Modal, TextField, Button, Box } from "@mui/material";
+import { Modal, TextField, Button, Box, MenuItem } from "@mui/material";
+
+const roles = ["Admin", "Super Admin", "User"];
 
 const UserUpdateModal = ({ open, onClose, user, onUpdate }) => {
   const [updatedComplaint, setUpdatedComplaint] = useState(user);
@@ -22,13 +24,18 @@ const UserUpdateModal = ({ open, onClose, user, onUpdate }) => {
           top: "50%",
           left: "50%",
           transform: "translate(-50%, -50%)",
-          width: 400,
+          width: 800,
           bgcolor: "background.paper",
           boxShadow: 24,
           p: 4,
+          margin:'2px',
+          maxHeight: "auto",
+          overflowY: "auto",
+
         }}
       >
-        <h2>Update User Record</h2>
+        <h2 style={{display: "flex",justifyContent:'center'}}>Update User Record</h2>
+        <div style={{ display: "flex", gap: "2rem" }}>
         <TextField
           fullWidth
           margin="normal"
@@ -40,11 +47,22 @@ const UserUpdateModal = ({ open, onClose, user, onUpdate }) => {
         <TextField
           fullWidth
           margin="normal"
-          label="Email"
-          name="email"
-          value={updatedComplaint.email}
+          label="Father Name"
+          name="fatherName"
+          value={updatedComplaint.fatherName}
           onChange={handleChange}
         />
+         <TextField
+          fullWidth
+          margin="normal"
+          label="CNIC"
+          name="CNIC"
+          value={updatedComplaint.CNIC}
+          onChange={handleChange}
+        />
+        </div>
+        <div style={{ display: "flex", gap: "2rem" }}>
+       
         <TextField
           fullWidth
           margin="normal"
@@ -53,14 +71,113 @@ const UserUpdateModal = ({ open, onClose, user, onUpdate }) => {
           value={updatedComplaint.mobileNumber}
           onChange={handleChange}
         />
+         <TextField
+          fullWidth
+          margin="normal"
+          label="Telephone Number"
+          name="telephoneNumber"
+          value={updatedComplaint.telephoneNumber}
+          onChange={handleChange}
+        />
         <TextField
           fullWidth
+          margin="normal"
+          label="Business Number"
+          name="businessNumber"
+          value={updatedComplaint.businessNumber}
+          onChange={handleChange}
+        />
+        </div>
+        <div style={{ display: "flex", gap: "2rem" }}>
+       
+        <TextField
+          fullWidth
+          margin="normal"
+          label="Email"
+          name="email"
+          value={updatedComplaint.email}
+          onChange={handleChange}
+        />
+        <TextField
+          fullWidth
+          select
           margin="normal"
           label="Role"
           name="role"
           value={updatedComplaint.role}
           onChange={handleChange}
+        >
+{roles.map((role) => (
+                  <MenuItem key={role} value={role}>
+                    {role}
+                  </MenuItem>
+                ))}
+        </TextField>
+        <TextField
+          fullWidth
+          margin="normal"
+          label="Occuption"
+          name="occuption"
+          value={updatedComplaint.occuption}
+          onChange={handleChange}
         />
+        </div>
+        <div style={{ display: "flex", gap: "2rem" }}>
+        
+        <TextField
+          fullWidth
+          margin="normal"
+          label="Address"
+          name="address"
+          value={updatedComplaint.address}
+          onChange={handleChange}
+        />
+        <TextField
+          fullWidth
+          margin="normal"
+          label="Business Address"
+          name="businessAddress"
+          value={updatedComplaint.businessAddress}
+          onChange={handleChange}
+        />
+        <TextField
+          fullWidth
+          margin="normal"
+          label="Mailing Address"
+          name="mailingAddress"
+          value={updatedComplaint.mailingAddress}
+          onChange={handleChange}
+        />
+        </div>
+       
+       
+        <div style={{ display: "flex", gap: "2rem" }}>
+        <TextField
+          fullWidth
+          margin="normal"
+          label="Emergency Number"
+          name="emergencyNumber"
+          value={updatedComplaint.emergencyNumber}
+          onChange={handleChange}
+        />
+        <TextField
+          fullWidth
+          margin="normal"
+          label="Vehicle Information"
+          name="VehicleInformation"
+          value={updatedComplaint.VehicleInformation}
+          onChange={handleChange}
+        />
+         <TextField
+          fullWidth
+          margin="normal"
+          label="UpdateDate"
+          name="createdDate"
+          value={updatedComplaint.createdDate}
+          onChange={handleChange}
+        />
+        </div>
+       
        
         <div
           style={{

@@ -44,10 +44,12 @@ const ComplaintsModal = ({open,onClose,complaint}) => {
         <Button onClick={onClose} variant="contained">
          <CloseIcon/>
         </Button>
-        <Button variant="contained"
+        {/* <Button variant="contained"
               color="secondary"  >
-          <EditNoteIcon/>
-        </Button>
+          <EditNoteIcon
+         onClick={() => complainthandleUpdate()}
+          />
+        </Button> */}
         
         <Button variant="contained"
               color="error"  >

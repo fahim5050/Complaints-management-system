@@ -1,20 +1,6 @@
 {
   "users": [
     {
-      "id": "19",
-      "Name": "Donna Allen",
-      "email": "donna.allen@example.com",
-      "mobileNumber": "3254326456546",
-      "role": "user"
-    },
-    {
-      "id": "20",
-      "Name": "Mark Young",
-      "email": "mark.young@example.com",
-      "mobileNumber": "3254326456546",
-      "role": "user"
-    },
-    {
       "id": "21",
       "Name": "fahim",
       "fatherName": "ud din ",
@@ -69,24 +55,6 @@
       "createdDate": "2024-08-07"
     },
     {
-      "id": "a129",
-      "Name": "najeeb",
-      "fatherName": "khan",
-      "CNIC": "12423345436564565",
-      "mobileNumber": "03068518739",
-      "telephoneNumber": "09123876",
-      "email": "ahmadali@gmail.com",
-      "occuption": "",
-      "address": "peshawar",
-      "businessAddress": "",
-      "businessNumber": "",
-      "mailingAddress": "",
-      "role": "Worker",
-      "emergencyNumber": "",
-      "VehicleInformation": "",
-      "createdDate": "2024-08-08"
-    },
-    {
       "id": "4214",
       "Name": "najeeb",
       "fatherName": "khan",
@@ -106,24 +74,6 @@
     }
   ],
   "complaints": [
-    {
-      "id": "5",
-      "userId": 8,
-      "title": "Database connection error",
-      "description": "The application cannot connect to the database.",
-      "status": "resolved",
-      "workerId": null,
-      "created_at": "2024-07-05T08:45:00Z"
-    },
-    {
-      "id": "6",
-      "userId": 9,
-      "title": "UI not responsive",
-      "description": "The user interface is not responsive on mobile devices.",
-      "status": "in progress",
-      "workerId": "3",
-      "created_at": "2024-07-06T12:00:00Z"
-    },
     {
       "id": "7",
       "userId": 10,
@@ -384,7 +334,7 @@
     },
     {
       "id": "2",
-      "userId": "19",
+      "userId": null,
       "message": "The recent update is great, but the loading time has increased significantly.",
       "status": "Pending",
       "response": ""
@@ -419,7 +369,7 @@
     },
     {
       "id": "7",
-      "userId": "20",
+      "userId": null,
       "message": "The app works fine, but the notifications are sometimes delayed. Please look into this issue.",
       "status": "Reviewed",
       "response": "We are currently working on improving the notification system. Thanks for your patience."

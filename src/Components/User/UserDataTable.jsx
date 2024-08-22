@@ -20,12 +20,13 @@ const UserDataTable = ({ users,onDelete, onUpdate}) => {
   const handleUpdate = (user) => {
     setSelectedUser(user);
     setIsUpdateModalOpen(true);
-    setIsUpdateModalOpen(false);
+    
   };
 
   const handleCloseModal = () => {
     setSelectedUser(null);
     setIsModalOpen(false);
+    setIsUpdateModalOpen(false)
   };
   const columns = [
     {
@@ -60,7 +61,7 @@ const UserDataTable = ({ users,onDelete, onUpdate}) => {
               variant="contained"
               color="secondary"
               style={{ marginRight: 8 }}
-              onClick={() => onUpdate(params.row)}
+              onClick={() => handleUpdate(params.row)}
             >
               <EditNoteIcon/>
             </Button>

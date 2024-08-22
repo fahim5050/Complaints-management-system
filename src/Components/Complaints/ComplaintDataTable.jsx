@@ -9,7 +9,7 @@ import UpdateComplaintModal from "./UpdateComplaintForm";
 
 
 
-const ComplaintDataTable = ({ complaints,workers, onView, onDelete, onUpdate }) => {
+const ComplaintDataTable = ({ complaints,workers,onDelete, onUpdate }) => {
   const [selectedComplaint, setSelectedComplaint] = useState(null);
   const [isComplaintModalOpen, setIsComplaintModalOpen] = useState(false);
   const [isUpdateModalOpen, setIsUpdateModalOpen] = useState(false);
@@ -123,8 +123,8 @@ const ComplaintDataTable = ({ complaints,workers, onView, onDelete, onUpdate }) 
   ];
  
   
-  console.log("Complaints Data:", complaints);
-  console.log("Workers Data:", workers);
+  // console.log("Complaints Data:", complaints);
+  // console.log("Workers Data:", workers);
   
   return (
     <div style={{ height: 521, width: "100%" }}>
@@ -137,25 +137,7 @@ const ComplaintDataTable = ({ complaints,workers, onView, onDelete, onUpdate }) 
         // checkboxSelection
         // disableSelectionOnClick
         experimentalFeatures={{ newEditingApi: true }}
-        sx={{
-          '& .MuiDataGrid-scrollContainer': {
-            // Customize the scroll container
-            overflow: 'auto',
-            '&::-webkit-scrollbar': {
-              width: '2px', // Width of the scrollbar
-            },
-            '&::-webkit-scrollbar-track': {
-              background: '#f1f1f1', // Background of the scrollbar track
-            },
-            '&::-webkit-scrollbar-thumb': {
-              background: '#888', // Color of the scrollbar thumb
-              borderRadius: '4px',
-            },
-            '&::-webkit-scrollbar-thumb:hover': {
-              background: '#555', // Color of the scrollbar thumb on hover
-            },
-          },
-        }}
+       
       />
       {selectedComplaint && (
         <ComplaintsModal
@@ -170,6 +152,7 @@ const ComplaintDataTable = ({ complaints,workers, onView, onDelete, onUpdate }) 
           onClose={handleCloseModal}
           complaint={selectedComplaint}
           onUpdate={onUpdate}
+
         />
       )}
     </div>

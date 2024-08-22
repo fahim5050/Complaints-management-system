@@ -27,11 +27,13 @@ const UserForm = () => {
     alert(`Viewing user: ${user.name}`);
   };
 
-  const handleUpdate = (user) => {
-    // Implement update logic here
-    alert(`Updating user: ${user.Name}`);
+  const handleUpdate = (updatedUser) => {
+    setUsers((prevUser) =>
+      prevUser.map((user) =>
+        user.id === updatedUser.id ? updatedUser : user
+      )
+    );
   };
-
   // const handleDelete = (user) => {
   //   // Implement delete logic here
   //   alert(`Deleting user: ${user.name}`);

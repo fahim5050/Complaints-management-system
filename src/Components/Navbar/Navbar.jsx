@@ -19,6 +19,9 @@ const Navbar = () => {
     setOpenNotifi(!openNotifi);
     setIsOpen(false);
   };
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  };
   return (
     <div className="nav_wrapper">
       <div className="nav_container">
@@ -38,7 +41,10 @@ const Navbar = () => {
           <Link to="/users" style={{ textDecoration: "none", color: "black" }}>
             <span>Users</span>
           </Link>
-          <Link to="/workers" style={{ textDecoration: "none", color: "black" }}>
+          <Link
+            to="/workers"
+            style={{ textDecoration: "none", color: "black" }}
+          >
             <span>Employee</span>
           </Link>
           <Link
@@ -119,29 +125,48 @@ const Navbar = () => {
           {isOpen && (
             <div className="dropdown-menu">
               <div className="profile-info">
+                <Link to="/profile" style={{ textDecoration: "none", color: "#333" }}>
                 <img
+                onClick={handleClick}
                   src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png"
                   alt="Profile"
                   className="profile-img-large"
                 />
-                <span>username</span>
+                </Link>
+                
+                <Link
+                  to="/profile"
+                  style={{ textDecoration: "none", color: "#333" }}
+                >
+                  <span onClick={handleClick}>username</span>
+                </Link>
               </div>
               <ul>
-                <li>
-                  <a href="#edit-profile">Edit Profile</a>
-                </li>
-                <li>
-                  <a href="#settings-privacy">Settings & Privacy</a>
-                </li>
-                <li>
-                  <a href="#help-support">Help & Support</a>
-                </li>
-                <li>
-                  <a href="#display-accessibility">Display & Accessibility</a>
-                </li>
-                <li>
-                  <a href="#logout">Logout</a>
-                </li>
+                <Link
+                  to="/edit_profile"
+                  style={{ textDecoration: "none", color: "#333" }}
+                >
+                  <li onClick={handleClick}>Edit Profile</li>
+                </Link>
+                <Link
+                  to="/help_and_support"
+                  style={{ textDecoration: "none", color: "#333" }}
+                >
+                  <li onClick={handleClick}>Help & Support</li>
+                </Link>
+                {/* <Link
+                  to="/display_and_Accessibility"
+                  style={{ textDecoration: "none", color: "#333" }}
+                >
+                  <li onClick={handleClick}>Display & Accessibility</li>
+                </Link> */}
+
+                <Link
+                  to="/logout"
+                  style={{ textDecoration: "none", color: "#333" }}
+                >
+                  <li onClick={handleClick}>Logout</li>
+                </Link>
               </ul>
             </div>
           )}
