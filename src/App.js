@@ -14,8 +14,9 @@ import Profile from "./Components/Profile/Profile.jsx";
 import EditProfile from "./Components/Profile/EditProfile.jsx";
 import HelpAndSupport from "./Components/Profile/HelpAndSupport.jsx";
 import DisplayAndAccessibility from "./Components/Profile/DisplayAndAccessibility.jsx";
-
-
+import UserDashboard from "./Components/UserDashboard/UserDashboard.jsx";
+import UserComplaints from "./Components/UserComplaints/UserComplaints.jsx";
+// import FeedbackDetails from "./Components/Feedbacks/FeedbackDetails.jsx";
 function App() {
   return (
     <Router>
@@ -37,9 +38,13 @@ function App() {
             path="/display_and_accessibility"
             element={<DisplayAndAccessibility />}
           />
+           <Route path="/user_complaints" element={<UserComplaints userId={10}/>} />
         </Routes>
-
+        {/* <h5>user dashboard</h5> */}
+          <UserDashboard/>
+          
         <Footer />
+        
       </div>
     </Router>
   );
