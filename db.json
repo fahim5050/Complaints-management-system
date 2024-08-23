@@ -37,6 +37,24 @@
       "createdDate": "2024-08-07"
     },
     {
+      "id": "23",
+      "Name": "najeeb",
+      "fatherName": "khan",
+      "CNIC": "12423345436564565",
+      "mobileNumber": "3254326456546",
+      "telephoneNumber": "643653546",
+      "email": "admin@gmail.com",
+      "occuption": "webdeveloper",
+      "address": "peshawar",
+      "businessAddress": "software house",
+      "businessNumber": "",
+      "mailingAddress": "",
+      "role": "Super Admin",
+      "emergencyNumber": "",
+      "VehicleInformation": "20",
+      "createdDate": "2024-08-07"
+    },
+    {
       "id": "4214",
       "Name": "najeeb",
       "fatherName": "khan",
@@ -60,6 +78,16 @@
       "id": "7",
       "userId": 10,
       "title": "Error 500 on dashboard",
+      "description": "Users receive a 500 error when accessing the dashboard.",
+      "status": "pending",
+      "workerId": null,
+      "created_at": "2024-07-07T15:30:00Z"
+      
+    },
+    {
+      "id": "37",
+      "userId": 10,
+      "title": "Error of internet",
       "description": "Users receive a 500 error when accessing the dashboard.",
       "status": "pending",
       "workerId": null,
