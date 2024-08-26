@@ -4,13 +4,13 @@ import logo from "../../images/logo.jpg";
 import "./Navbar.css";
 import { IoIosNotifications } from "react-icons/io";
 import { FaChevronDown } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { color } from "framer-motion";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [openNotifi, setOpenNotifi] = useState(false);
-
+const navigate=useNavigate()
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
     setOpenNotifi(false);
@@ -22,6 +22,9 @@ const Navbar = () => {
   const handleClick = () => {
     setIsOpen(!isOpen);
   };
+  const handleLogout=()=>{
+    navigate('login')
+  }
   return (
     <div className="nav_wrapper">
       <div className="nav_container">
@@ -162,10 +165,10 @@ const Navbar = () => {
                 </Link> */}
 
                 <Link
-                  to="/logout"
+                  to="/login"
                   style={{ textDecoration: "none", color: "#333" }}
                 >
-                  <li onClick={handleClick}>Logout</li>
+                  <li onClick={handleLogout}>Logout</li>
                 </Link>
               </ul>
             </div>

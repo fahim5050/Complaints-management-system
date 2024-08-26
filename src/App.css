@@ -32,6 +32,7 @@ body {
 .App {
  position: relative;
  background-color: var(  --primary-color);
+ height: auto;
  
 }
 

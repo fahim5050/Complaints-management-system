@@ -16,12 +16,19 @@ import HelpAndSupport from "./Components/Profile/HelpAndSupport.jsx";
 import DisplayAndAccessibility from "./Components/Profile/DisplayAndAccessibility.jsx";
 import UserDashboard from "./Components/UserDashboard/UserDashboard.jsx";
 import UserComplaints from "./Components/UserComplaints/UserComplaints.jsx";
+import LoginForm from "./Components/auth/Login.jsx";
+// import UserNavbar from "./Components/UserNavbar/UserNavbar.jsx";
+// import AdminNavbar from "./Components/AdminNavbar/AdminNavbar.jsx";
+import { useState } from "react";
+import AdminDashboard from "./Components/AdminDashboard/AdminDashboard.jsx";
 // import FeedbackDetails from "./Components/Feedbacks/FeedbackDetails.jsx";
 function App() {
+  const [role, setRole] = useState("");
   return (
     <Router>
       <div className="App">
-        <Navbar />
+      <Navbar />
+        
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/complaints" element={<ComplaintData />} />
@@ -34,14 +41,15 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/edit_profile" element={<EditProfile />} />
           <Route path="/help_and_support" element={<HelpAndSupport />} />
-          <Route
-            path="/display_and_accessibility"
-            element={<DisplayAndAccessibility />}
-          />
+          <Route path="/display_and_accessibility" element={<DisplayAndAccessibility />}/>
+           <Route path="/user_dashboard" element={<UserDashboard/>} />
+           <Route path="/admin_dashboard" element={<AdminDashboard/>} />
            <Route path="/user_complaints" element={<UserComplaints userId={10}/>} />
+           <Route path="/login" element={ <LoginForm setRole={setRole}/>} />
         </Routes>
-        {/* <h5>user dashboard</h5> */}
-          <UserDashboard/>
+        
+          
+         
           
         <Footer />
         
