@@ -5,7 +5,7 @@ import "./Navbar.css";
 import { IoIosNotifications } from "react-icons/io";
 import { FaChevronDown } from "react-icons/fa";
 import { Link, useNavigate } from "react-router-dom";
-import { color } from "framer-motion";
+
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
